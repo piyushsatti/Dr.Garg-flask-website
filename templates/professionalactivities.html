@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container m-auto">
+    <div class="row">
+        <div class="col m-auto py-3" style="text-align: left;">
+
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col">
+                    <h3 class="text-primary">Research Projects</h3>
+                </div>
+            </div>
+
+            {% for x in data.research_projects %}
+            {% set mem_img = "/static/assets/activity_imgs/" + x.img %}
+            <div class="row py-3">
+                <div class="col-3">
+                    <img src={{mem_img}} class="d-block w-50 m-auto">
+                </div>
+                <div class="col">
+                    <h5>{{x.title}}</h5>
+                    <p class="text-secondary">{{x.desc}}</p>
+                </div>
+            </div>
+            {% endfor %}
+
+            <hr style="color: white;">
+
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col">
+                    <h3 class="text-primary">{{data.reviewer.title}}</h3>
+                </div>
+            </div>
+
+            {% for x in data.reviewer.info %}
+            {% set ide = "ide" + loop.index|string %}
+            <div class="row py-3">
+                <div class="col-sm-3">
+                    <div class="carousel-inner">
+                        <div id={{ide}} class="carousel slide"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                {% for y in x.imgs %}
+                                {% set mem_img = "/static/assets/activity_imgs/"+y|default("jrnl.jpg", true) %}
+                                <div class="carousel-item item{% if loop.index == 1 %} active{% endif %}">
+                                    <img src={{mem_img}} class="d-block  w-50 m-auto" alt="Card image cap">
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#{{ide}}" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#{{ide}}" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col justify-content-center align-content-center align-items-center">
+                    <ul>
+                        {% for y in x.content %}
+                        <li>{{y}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+
+            <hr style="color: white;">
+
+            <div class="row">
+                <div class="col-3">
+
+                </div>
+                <div class="col">
+                    <h3 class="text-primary">{{data.committees.title}}</h3>
+                </div>
+            </div>
+
+            <div class="row py-3">
+                <div class="col-3">
+                    <div class="carousel-inner">
+                        <div id="tets" class="carousel slide"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                {% for x in data.committees.imgs %}
+                                {% set mem_img = "/static/assets/activity_imgs/" + x %}
+                                <div class="carousel-item {% if loop.index == 1 %} active {% endif %}">
+                                    <img src={{mem_img}} class="d-block w-50 m-auto" >    
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#tets" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#tets" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <ul>
+                        {% for x in data.committees.list %}
+                        <li>{{x}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+            <hr style="color: white;">
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

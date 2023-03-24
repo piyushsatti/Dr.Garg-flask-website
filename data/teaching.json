@@ -1,0 +1,43 @@
+[
+    {
+        "subject": "UEC612: Digital System Design",
+        "subhead": "Undergraduate Students, 4.5 Credits",
+        "objective": "Course Objectives: To familiarize the student with the analysis, design and evaluation of digital systems of medium complexity based on SSI, MSI and Programmable logic devices. To familiarize the students with the issues in the design of iterative networks, timing analysis of synchronous and asynchronous systems. To introduce Hardware description language (VHDL) and familiarize students to design combinational and sequential circuits using VHDL and simulators",
+        "clo_desc": "Course learning outcome (CLO): The student will be able to:",
+        "clo_points": [
+            "Design the basic logic functions, simplification of expressions, Karnaugh maps",
+            "Design flip flops, sequential systems",
+            "Design Moore and Mealy Finite State Machine",
+            "Design digital Systems using VHDL",
+            "Compare the performance of a given digital circuits/systems with respect to their speed, power consumption, number of ICs, and cost"
+        ],
+        "image": "dsd.jpg"
+    },
+    {
+        "subject": "UEC404: Signals and Systems",
+        "subhead": "Undergraduate Students, 4.5 Credits",
+        "objective": "Course Objective: The aim of this subject is to develop analytical capability of students, by which they would be able to handle real-time signal processing related problems and projects. The knowledge of various transforms will help students to work in multi-disciplinary fields of engineering in group activities",
+        "clo_desc": "Course learning outcome (CLO): The student will be able to:",
+        "clo_points": [
+            "analyze the properties of continuous and discrete time signals and systems",
+            "represent signals and systems in the frequency domain using Fourier tools",
+            "apply Z-transform to analyze discrete time signals and system",
+            "obtain the Fast Fourier transform of a sequence and measure its computational efficiency"
+        ],
+        "image": "sns.jpg"
+    },
+    {
+        "subject": "UEC609: MOS Circuit Design",
+        "subhead": "Undergraduate Students, 4.0 Credits",
+        "objective": "Course Objective: The course aims to present the principles and techniques of both MOS based digital and analog circuit design, connecting digital circuits, logic design, and analog components with the fundamental device physics, processing techniques and transistor level characteristics of Silicon integrated circuits, both in theoretical and practical aspects. Course Learning Outcomes (CLOs): Upon completion of this course, the student will be able to:",
+        "clo_points": [
+            "Use MOS structures in basic digital and analog circuits",
+            "Describe the general processing steps required to fabricate an integrated circuit",
+            "Analyse the fundamental static and dynamic performance of CMOS inverter",
+            "Analyse the fundamental static and dynamic performance of logic gates with given constraints",
+            "Implement various CMOS logic circuits",
+            "Design simple circuits to meet stated operating specifications"
+        ],
+        "image": "mos.jpeg"
+    }
+]

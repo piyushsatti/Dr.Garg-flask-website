@@ -1,0 +1,35 @@
+[
+    {
+        "subject": "Approximate Computing",
+        "image": "sample.jpeg",
+        "desc": "The concept of approximate computing relies on the ability of many systems and applications to tolerate some loss of quality in the computed result. The main idea is to exploit the inherent error resiliency of the system to achieve energy efficiency, or in other words, trading accuracy with energy consumption. Such trade-off, in most cases, is also associated with performance improvements like faster operations, area reduction etc.",
+        "papers":[
+            {
+                "paper":"J1. Bharat Garg, Energy efficient Gaussian filtering for multimedia applications using novel approximate adders, Sadhana, pp. 1-9, 2021, https://doi.org/10.1007/s12046-021-01753-7",
+                "link":""
+            }
+        ]
+    },
+    {
+        "subject": "Image Processing",
+        "image": "sample.jpeg",
+        "desc": "The last three decades show significant improvement in medical imaging for diagnosing diseases at various stages. The availability of sophisticated technology such as ultrasonography, computed tomography, X-ray and medical resonance imaging (MRI) made it possible to detect diseases at early stages with no pain to the patients. There are different techniques used to capture images in different devices where error/fault may introduce noise in the captured images. The noise may occur during image capturing, storage or transmission due to fault in camera sensor, memory or noisy channel respectively. Image denoising is the key operation used to enhance the quality of the images for various diagnosis. ",
+        "papers":[
+            {
+                "paper":"J1. Bharat Garg, Energy efficient Gaussian filtering for multimedia applications using novel approximate adders, Sadhana, pp. 1-9, 2021, https://doi.org/10.1007/s12046-021-01753-7",
+                "link":""
+            }
+        ]
+    },
+    {
+        "subject": "Hardware Security",
+        "image": "sample.jpeg",
+        "desc": "Hardware security is vulnerability protection that comes in the form of a physical device rather than software that is installed on the hardware of a computer system.",
+        "papers":[
+            {
+                "paper":"J1. Bharat Garg, Energy efficient Gaussian filtering for multimedia applications using novel approximate adders, Sadhana, pp. 1-9, 2021, https://doi.org/10.1007/s12046-021-01753-7",
+                "link":""
+            }
+        ]
+    }
+]

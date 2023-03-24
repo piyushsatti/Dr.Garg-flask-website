@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container py-5 m-auto">
+    <div class="text-primary h1 text-start">
+        Faculty
+    </div>
+	<br>
+	<div class="row">
+		{% for x in data %}
+		{% set mem_img = "/static/assets/mem_imgs/"+x.mem_img|default("sample.jpeg", true) %}
+		{% if x.type == "Faculty" %}
+		<div class="col">
+			<div class="card bg-dark m-auto" style="width: 20rem;height: 25rem;border-radius: 1rem;">
+				<div class="card-body">
+					<img class="card-img-top px-1 py-3" src={{mem_img}} style="width: 50%;height: 50%;border-radius: 1rem;"
+						alt="Card image cap">
+					<h5 class="card-title">{{x.name}}</h5>
+					<h6 class="card-subtitle mb-2 text-muted">{{x.desc}}</h6>
+					<a href={{x.website}} target="_blank" class="btn btn-success align-items-end">Learn More</a>
+				</div>
+			</div>
+		</div>
+		{% endif %}
+		{% endfor %}
+	</div>
+</div>
+
+<hr style="color: white;">
+
+<div class="container py-5 m-auto">
+    <div class="text-primary h1 text-start">
+        Current Students
+    </div>
+	<br>
+	<div class="row">
+		{% for x in data %}
+		{% set mem_img = "/static/assets/mem_imgs/"+x.mem_img|default("sample.jpeg", true) %}
+		{% if x.type == "Current Student" %}
+		<div class="col">
+			<div class="card bg-dark m-auto" style="width: 20rem;height: 25rem;border-radius: 1rem;">
+				<div class="card-body">
+					<img class="card-img-top px-1 py-1" src={{mem_img}} style="width: 50%;height: 50%;border-radius: 1rem;"
+						alt="Card image cap">
+					<h5 class="card-title">{{x.name}}</h5>
+					<h6 class="card-subtitle mb-2 text-muted">{{x.desc}}</h6>
+					<a href={{x.website}} target="_blank" class="btn btn-success">Learn More</a>
+				</div>
+			</div>
+		</div>
+		{% endif %}
+		{% endfor %}
+	</div>
+</div>
+
+<hr style="color: white;">
+
+<div class="container py-5 m-auto">
+    <div class="text-primary h1 text-start">
+        Past Students
+    </div>
+	<br>
+	<div class="row">
+		{% for x in data %}
+		{% set mem_img = "/static/assets/mem_imgs/"+x.mem_img|default("sample.jpeg", true) %}
+		{% if x.type == "Past Student" %}
+		<div class="col">
+			<div class="card bg-dark m-auto" style="width: 20rem;height: 25rem;border-radius: 1rem;">
+				<div class="card-body">
+					<img class="card-img-top py-1" src={{mem_img}} style="width: 50%;height: 50%;border-radius: 1rem;"
+						alt="Card image cap">
+					<h5 class="card-title">{{x.name}}</h5>
+					<h6 class="card-subtitle mb-2 text-muted">{{x.desc}}</h6>
+					<a href={{x.website}} target="_blank" class="btn btn-success">Learn More</a>
+				</div>
+			</div>
+		</div>
+		{% endif %}
+		{% endfor %}
+	</div>
+</div>
+
+{% endblock content %}

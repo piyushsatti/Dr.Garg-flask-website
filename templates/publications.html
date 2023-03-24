@@ -1,0 +1,117 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<nav id="navbar-example2" class="navbar navbar-light bg-light">
+    <a class="navbar-brand  px-2" href="#">Papers</a>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="#1">Journals</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#2">Conferences</a>
+        </li>
+    </ul>
+</nav>
+
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0px">
+    <div class="container m-auto py-5 px-3">
+        <div id="1" class="row py-3 px-3">
+            <div class="col-sm-3">
+                <div class="carousel-inner">
+                    <div id="pub_jrnl" class="carousel slide align-items-center"
+                        data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#pub_jrnl" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#pub_jrnl" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#pub_jrnl" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            {% for x in data.journal_image %}
+                            {% set mem_img = "/static/assets/publications/"+x|default("sample.jpeg", true) %}
+                            <div class="carousel-item item{% if loop.index == 1 %} active{% endif %}">
+                                <img src={{mem_img}}>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#pub_jrnl"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#pub_jrnl"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div style="text-align: left;">
+                    <h4 class="text-primary">Journals</h4>
+                    <div style="text-align: left;">
+                        <p class="text-muted">{{data.jounral_desc}}</p>
+                        {% for y in data.journal_papers %}
+                        <p>
+                            {{y.paper}} <a href="{{y.link}}" target="_blank"><i class="fas fa-link"></i></a>
+                        </p>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="color: white;">
+        <div id="2" class="row py-3 px-3">
+            <div class="col-sm-3">
+                <div class="carousel-inner">
+                    <div id="pub_conf" class="carousel slide align-items-center"
+                        data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#pub_conf" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#pub_conf" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#pub_conf" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            {% for x in data.conference_image %}
+                            {% set mem_img = "/static/assets/publications/"+x|default("sample.jpeg", true) %}
+                            <div class="carousel-item item{% if loop.index == 1 %} active{% endif %}">
+                                <img src={{mem_img}}>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#pub_conf"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#pub_conf"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div style="text-align: left;">
+                    <h4 class="text-primary">Conferences</h4>
+                    <div style="text-align: left;">
+                        <p class="text-muted">{{data.conference_desc}}</p>
+                        {% for y in data.conference_papers %}
+                        <p>
+                            {{y.paper}} <a href="{{y.link}}" target="_blank"><i class="fas fa-link"></i></a>
+                        </p>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endblock content %}

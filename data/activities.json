@@ -1,0 +1,64 @@
+{
+    "research_projects": [
+        {
+            "title": "A. Approximate Arithmetic Unit Designs for FPGAs",
+            "desc": "Significant work has been done to achieve efficient implementation of arithmetic units using approximate computing with ASIC technology but these designs when implemented on FPGAs becomes inefficient. Because of architectural difference, the FPGA based design requires different approach to be efficient in terms of area and delay when implemented on FPGA. This project aims to develop efficient arithmetic unit design for FPGAs by using the concept of approximate computing.",
+            "img":"jrnl.jpg"
+        },
+        {
+            "title": "B. Efficient Filter Architectures for Image Processing",
+            "desc": "This project aims to develop efficient filter implementation for image processing applications. It exploits architectural and circuit level techniques to implement filtering algorithm such that they require less implementation area and consume less power while maintain the performance of the implemented filters.",
+            "img":"jrnl.jpg"
+        },
+        {
+            "title": "C. Efficient Digital Circuit Design using Memristors",
+            "desc": "This project aims to develop efficient digital circuits using Memristors. It exploits the properties of Memristors to implement efficient digital designs such as arithmetic units, comparators, and filters such that implemented designs require less implementation area and consume less power while maintain the performance.",
+            "img":"jrnl.jpg"
+        }
+    ],
+    "reviewer": {
+        "title": "Journals' Reviewer",
+        "info": [
+            {
+                "imgs": [
+                    "jrnl.jpg",
+                    "jrnl.jpg"
+                ],
+                "content": [
+                    "IEEE Transactions on Image Processing",
+                    "IEEE Transactions on VLSI ",
+                    "IEEE Transactions on Circuits and Systems I: Regular Papers",
+                    "IEEE Transactions on Circuits and Systems II: Express Briefs",
+                    "IEEE Transactions on Semiconductor Manufacturing",
+                    "IEEE Access"
+                ]
+            },
+            {
+                "imgs": [
+                    "jrnl.jpg",
+                    "jrnl.jpg"
+                ],
+                "content": [
+                    "Elsevier's Microelectronics Journal",
+                    "Elsevier's Microelectronics Reliability",
+                    "Elsevier's Microprocessors and Microsystems",
+                    "Elsevier's Integration, the VLSI Journal",
+                    "Springer's Journal of Electronic Testing and Applications",
+                    "Springer's Multimedia Tools and Applications"
+                ]
+            }
+        ]
+    },
+    "committees": {
+        "title": "International Conferences Committees",
+        "list": [
+            "TPC member, The 2021 international conference on, Artificial Intelligence and Big Data, in digital Era (ICABDE) held 18-19 Dec, 2020, Link",
+            "Organizing Committee member, 9th IEEE International Conference on Industrial & Information Systems (ICIIS2014) held on 15th-17th, Dec. 2014 at Gwalior, India"
+        ],
+        "imgs":[
+            "jrnl.jpg",
+            "jrnl.jpg",
+            "jrnl.jpg"
+        ]
+    }
+}

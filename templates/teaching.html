@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<nav id="navbar-example2" class="navbar navbar-light bg-light">
+	<a class="navbar-brand  px-2" href="#">Subjects</a>
+	<ul class="nav nav-pills">
+		{% for x in data %}
+		{% set sub_name = "#"+x.subject|default("def", true) %}
+		<li class="nav-item">
+			<a class="nav-link" href={{sub_name}}>{{x.subject|default("def", true)}}</a>
+		</li>
+		{% endfor %}
+	</ul>
+</nav>
+
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0px">
+	<div class="container m-auto">
+		{% for x in data %}
+		{% set sub_name = x.subject|default("def", true) %}
+		<div id={{sub_name}} class="row py-2">
+			<div class="col-sm-3 m-auto">
+				{% set subject_image = "/static/assets/subject_images/"+x.image|default("sample.jpeg", true) %}
+				<img src={{subject_image}} style="width: 10rem;height: 10rem;border-radius: 10px;">
+			</div>
+			<div class="col">
+				<div style="text-align: left;">
+					<h4 class="text-primary">{{sub_name}}</h4>
+					<p class="text-muted">{{x.subhead}}</p>
+					<p>{{x.objective}}</p>
+					<p>{{x.clo_desc}}
+					<ul>
+						{% for y in x.clo_points %}
+						<li>
+							{{y}}
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+		<hr style="color: white;">
+		{% endfor %}
+	</div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Bharat Garg</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<script src="https://kit.fontawesome.com/c1684a1756.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="/static/main.css">
+
+</head>
+
+<body class="bg-dark text-light w-100">
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+		<div class="container-fluid">
+
+			<div class="row">
+				<div class="col">
+					<a class="navbar-brand mxy-auto px-3" href="/">Bharat Garg</a>
+				</div>
+				<div class="col">
+					<a href="https://www.linkedin.com/in/bharat-garg-9ab48b13/" target="_blank"><i
+							class="fab fa-linkedin"></i></a>
+				</div>
+				<div class="col">
+					<a href="https://scholar.google.com/citations?user=M_NAbSkAAAAJ&hl=en" target="_blank"><i
+							class="fab fa-google"></i></a>
+				</div>
+				<div class="col">
+					<a href="https://www.researchgate.net/profile/Bharat-Garg-5" target="_blank"><i
+							class="fab fa-researchgate"></i></a>
+				</div>
+				<div class="col">
+					<a href="https://eced.thapar.edu/facultydetails/MTI1MQ==" target="_blank"><i
+							class="fas fa-graduation-cap"></i></a>
+				</div>
+				<div class="col">
+					<a href="https://thapar.irins.org/profile/154600" target="_blank"><i class="far fa-eye"></i></a>
+				</div>
+				<div class="col">
+					<a href="https://orcid.org/my-orcid?orcid=0000-0002-2904-3720" target="_blank"><i
+							class="fab fa-orcid"></i></a>
+				</div>
+			</div>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+				aria-controls="navbarTogglerDemo02" aria-expanded="true" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+				<ul class="navbar-nav mxy-auto mb-2 mb-sm-auto">
+					<li class="nav-item">
+						<a class="nav-link active" href="/about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="/teaching">Teaching</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="/research">Research</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="/publications">Publications</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="/team">Team</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="/professionalactivities">Professional Activities</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	{% set banner_path = "/static/assets/banner_imgs/" + banner|default("banner2.jpeg", true) %}
+	<div class="container banner_img border-bottom border-5 border-primary w-100">
+		<img class="w-100" src={{banner_path}} alt="Banner Image" style="transform: matrix(1,0,0,1,0,-60);">
+		<div class="centered">
+			<h1>{{route}}</h1>
+		</div>
+	</div>
+
+	<div class="min-vh-100">
+		{% block content%}
+		{% endblock %}
+	</div>
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-bottom mx-auto border-top border-5 border-primary">
+		<div class="container-fluid">
+			<div class="row w-100">
+				<div class="col-8 text-left">
+					<p>
+						<span class="text-secondary">
+							Address:
+						</span>
+						C-329, Academic Block-C, Thapar Institute of Engineering and Technology, Patiala<br>
+						Bhadson Raod, Patiala-147004, Punjab, India <br>
+						<span class="text-secondary">
+							Email:
+						</span>
+						bharat.garg@thapar.edu, bgarg.iiitm@gmail.com
+						<br>
+						<span class="text-secondary">
+							Contact:
+						</span>
+						+91-7974-677-918, +91-9407-363-919
+					</p>
+				</div>
+				<div class="col-4">
+					<img src="/static/assets/footer/thapar_logo.png" width="200" height="100" alt="">
+				</div>
+			</div>
+		</div>
+	</nav>
+</body>
+
+</html>

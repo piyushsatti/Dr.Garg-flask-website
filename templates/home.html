@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="row px-5 py-5 justify-content-center m-auto">
+    <div class="col-2">
+        <img src="/static/assets/garg_bharat.jpeg" style="height:13rem; width:8rem;" class="rounded mx-auto d-block" alt="Dr. Bharat Garg">
+    </div>
+    <div class="col-lg " style="color:lavenderblush;font-family:monospace;">
+        Dr. Bharat Garg has completed his Ph.D. “Energy Efficient Accuracy Aware VLSI Architectures for Image Processing Applications using Approximate Computing” from ABV-Indian Institute of Information Technology and Management Gwalior in 2017. Currently, he is working as Assistant Professor in Electronics and Communication Engineering Department in Thapar Institute of Engineering and Technology, Patiala since 2017. Prior to his PhD, he has worked with the semiconductor industries namely “Cypress Semiconductors India Private Limited” and “Advanced Micro Devices (AMD), Hyderabad” from year 2007- 2010. While working with these industries, he has worked on the design and verification of different projects including “design of universal digital block”, “IO subsystem design”, “memory design and verification”. On a project assignment of “Programmable SoC Design”, he has worked on Cypress Semiconductors, Washington USA for a month. He is efficient in HDL (VHDL and Verilog), C, C+, MATLAB and have good working experience with CAD tools namely Synopsys, Mentor Graphics, and Xilinx FPGA design flow. His research interest includes the design and development of high performance arithmetic unit, energy efficient VLSI architectures for image processing and hardware security. He is very efficient in signal/image processing and working since 5 years. He has authored more than 40 research papers in the international journal/conference of repute including IEEE transactions and letters.
+    </div>
+</div>
+
+<nav id="navbar-example2" class="navbar navbar-light bg-light">
+    <a class="navbar-brand px-2" href="#"></a>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="#1">Opportunities</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="m-auto">
+    <blockquote class="blockquote text-center py-5">
+        <p class="mb-0 h1">“Successful and unsuccessful people do not vary greatly in their abilities. They vary in
+            their
+            desires to reach their potential.”</p>
+        <footer class="blockquote-footer py-4">John Maxwell</footer>
+    </blockquote>
+</div>
+
+<div class="row-5 m-auto w-50">
+    <div id="homecaro" class="carousel slide align-items-center" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            {% for x in data.carousal %}
+            {% set mem_img = "/static/assets/caro/" + x.img %}
+            <div class="carousel-item {% if loop.index==1 %} active {% endif %}">
+                <img src={{mem_img}} class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>{{x.heading}}</h5>
+                    <p>{{x.subheading}}</p>
+                  </div>
+            </div>
+            {% endfor %}
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#homecaro"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#homecaro"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0px">
+    <div class="container m-auto py-5 px-3">
+        <div id="1" class="row py-3 px-3">
+            <div class="col">
+                <div class="text-primary h3">
+                    Opportunities
+                </div>
+                <div style="text-align: left;">
+                    {% for x in data.opportunities %}
+                    <h3>
+                        {{x.title}}
+                    </h3>
+                    <ul style="align-content:flex-start;">
+                        <li>
+                            {{x.content.text}} <a href="{{x.content.link}}" target="_blank"><i class="fas fa-link"></i></a>
+                        </li>
+                    </ul>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

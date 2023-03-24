@@ -1,0 +1,156 @@
+[
+    {
+        "type":"Faculty",
+        "name":"Dr. G K Sharma",
+        "desc":"Professor, IIITM Gwalior",
+        "mem_img":"gksharma.jpg",
+        "website":"https://www.iiitm.ac.in/index.php/en/component/splms/teacher/Prof."
+    },
+	{
+        "type":"Faculty",
+        "name":"Dr. K V Arya",
+        "desc":"Professor, IIITM Gwalior",
+        "mem_img":"kvarya.jpg",
+        "website":"https://www.iiitm.ac.in/index.php/en/component/splms/teacher/Dr.KVArya"
+    },
+	{
+        "type":"Faculty",
+        "name":"Dr. Surya Prasath",
+        "desc":"Assistant Professor, University of Cincinnati",
+        "mem_img":"Surya.jpg",
+        "website":"https://www.cincinnatichildrens.org/bio/p/surya-prasath"
+    },
+	{
+        "type":"Faculty",
+        "name":"Dr. Dang Ngoc Hoang Thanh",
+        "desc":"Assistant Professor, University of Economics Ho-Chi-Minh city (UEH)",
+        "mem_img":"Thanh.png",
+        "website":"https://www.thanhlab.com/"
+    },
+	{
+        "type":"Faculty",
+        "name":"Dr. Sunil Dutt",
+        "desc":"Assistant Professor, IIT Goa",
+        "mem_img":"sunildutt.jpg",
+        "website":"https://iitgoa.ac.in/ee-faculty-profile/?uid=sdutt&exp=EE"
+    },
+	{
+        "type":"Faculty",
+        "name":"Dr. Vijaypal Singh Rathor",
+        "desc":"Assistant Professor, IIITDM Jabalpur",
+        "mem_img":"vijaypal.jpg",
+        "website":"http://faculty.iiitdmj.ac.in/faculty/vrathor"
+    },
+	{
+        "type":"Faculty",
+        "name":"Dr. Sujit Kumar Patel",
+        "desc":"Assistant Professor, TIET Patiala",
+        "mem_img":"sujit.jpg",
+        "website":"https://www.thapar.edu/faculties/view/Dr.-Sujit-Kumar-Patel/Mzkw/MTU="
+    },
+	{
+        "type":"Faculty",
+        "name":"Dr. Shireesh Kumar Rai",
+        "desc":"Assistant Professor, TIET Patiala",
+        "mem_img":"shireesh.png",
+        "website":"https://www.thapar.edu/faculties/view/Dr.-Shireesh-Kumar-Rai/NDIw/MTU="
+    },
+	{
+        "type":"Faculty",
+        "name":"Dr. Prashant Singh Rana",
+        "desc":"Associate Professor, TIET Patiala",
+        "mem_img":"psrana.png",
+        "website":"https://www.thapar.edu/faculties/view/Dr.-Prashant-S-Rana/MzQx/NA=="
+    },
+	{
+        "type":"Faculty",
+        "name":"Dr. Shailendra Tiwari",
+        "desc":"Assistant Professor, TIET Patiala",
+        "mem_img":"shailendra.jpg",
+        "website":"https://www.thapar.edu/faculties/view/Dr.-Shailendra-tiwari/MzU1/NA=="
+    },
+	{
+        "type":"Faculty",
+        "name":"Dr. Jay Prakash",
+        "desc":"Assistant Professor, NIT Calicut",
+        "mem_img":"jp.jpeg",
+        "website":"https://minerva.nitc.ac.in/?q=user/2238"
+    },
+	{
+        "type":"Faculty",
+        "name":"Dr. Sanjeev Sharma",
+        "desc":"Assistant Professor, IIIT Pune",
+        "mem_img":"sanjeev.jpg",
+        "website":"https://www.iiitp.ac.in/page/dr-sanjeev-sharma"
+    },
+    {
+        "type":"Current Student",
+        "name":"Piyush Satti",
+        "desc":"UG Student, TIET Patiala",
+        "mem_img":"psatti.jpeg",
+        "website":"https://www.piyushsatti.me/"
+    },
+    {
+        "type":"Current Student",
+        "name":"Vaibhav Shrotiya",
+        "desc":"UG Student, TIET Patiala",
+        "mem_img":"Vaibhav_Shrotiya.jpeg",
+        "website":"https://www.piyushsatti.me/"
+    },
+    {
+        "type":"Current Student",
+        "name":"Jeeya Prakash",
+        "desc":"UG Student, TIET Patiala",
+        "mem_img":"Jeeya_Prakash.jpg",
+        "website":"https://www.piyushsatti.me/"
+    },
+    {
+        "type":"Past Student",
+        "name":"Archit Sethi",
+        "desc":"UG Student, TIET Patiala",
+        "mem_img":"Archit_Sethi.jpeg",
+        "website":"https://www.piyushsatti.me/"
+    },
+    {
+        "type":"Past Student",
+        "name":"Prateek Jeet Singh Sohi",
+        "desc":"UG Student, TIET Patiala",
+        "mem_img":"Prateek.jpeg",
+        "website":"https://www.piyushsatti.me/"
+    },
+    {
+        "type":"Past Student",
+        "name":"Nikhil Sharma",
+        "desc":"UG Student, TIET Patiala",
+        "mem_img":"Nikhil.jpeg",
+        "website":"https://www.piyushsatti.me/"
+    },
+    {
+        "type":"Past Student",
+        "name":"Nishant Bindal",
+        "desc":"UG Student, TIET Patiala",
+        "mem_img":"Nishant.jpeg",
+        "website":"https://www.piyushsatti.me/"
+    },
+    {
+        "type":"Past Student",
+        "name":"Rajanbir Singh Ghuman",
+        "desc":"UG Student, TIET Patiala",
+        "mem_img":"Rajan.jpeg",
+        "website":"https://www.piyushsatti.me/"
+    },
+    {
+        "type":"Past Student",
+        "name":"Pratibha Agarwal",
+        "desc":"PG Student, TIET Patiala",
+        "mem_img":"Pratibha.jpeg",
+        "website":"https://www.piyushsatti.me/"
+    },
+    {
+        "type":"Past Student",
+        "name":"Yashoda Bisth",
+        "desc":"PG Student, TIET Patiala",
+        "mem_img":"Yashoda.jpeg",
+        "website":"https://www.piyushsatti.me/"
+    }
+]

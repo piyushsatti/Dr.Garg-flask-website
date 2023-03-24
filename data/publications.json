@@ -1,0 +1,86 @@
+{
+    "jounral_desc": "Below are my jornal publications",
+    "journal_image": ["sample.jpeg","sample.jpeg","sample.jpeg"],
+    "conference_desc": "Below are my conference publications",
+    "conference_image": ["sample.jpeg","sample.jpeg","sample.jpeg"],
+    "journal_papers":[
+        {
+            "paper":"J1. Bharat Garg, Energy efficient Gaussian filtering for multimedia applications using novel approximate adders, Sadhana, pp. 1-9, 2021, https://doi.org/10.1007/s12046-021-01753-7",
+            "link":""
+        },
+        {
+            "paper":"J1. Bharat Garg, Energy efficient Gaussian filtering for multimedia applications using novel approximate adders, Sadhana, pp. 1-9, 2021, https://doi.org/10.1007/s12046-021-01753-7",
+            "link":""
+        },
+        {
+            "paper":"J1. Bharat Garg, Energy efficient Gaussian filtering for multimedia applications using novel approximate adders, Sadhana, pp. 1-9, 2021, https://doi.org/10.1007/s12046-021-01753-7",
+            "link":""
+        },
+        {
+            "paper":"J1. Bharat Garg, Energy efficient Gaussian filtering for multimedia applications using novel approximate adders, Sadhana, pp. 1-9, 2021, https://doi.org/10.1007/s12046-021-01753-7",
+            "link":""
+        },
+        {
+            "paper":"J1. Bharat Garg, Energy efficient Gaussian filtering for multimedia applications using novel approximate adders, Sadhana, pp. 1-9, 2021, https://doi.org/10.1007/s12046-021-01753-7",
+            "link":""
+        }
+    ],
+    "conference_papers":[
+        {
+            "paper":"Bharat Garg, Energy efficient Gaussian filtering for multimedia applications using novel approximate adders, Sadhana, pp. 1-9, 2021, https://doi.org/10.1007/s12046-021-01753-7",
+            "link":""
+        },
+        {
+            "paper":"Sohi, Prateek Jeet Singh, Nikhil Sharma, Bharat Garg, and K. V. Arya. \"Noise Density Range Sensitive Mean-Median Filter for Impulse Noise Removal.\" In Innovations in Computational Intelligence and Computer Vision, pp. 150-162. Springer, Singapore, 2021.",
+            "link":""
+        },
+        {
+            "paper":"Garg, Bharat, and Yashoda Bisht. \"A Novel High Performance Reverse Carry Propagate Adder for Energy Efficient Multimedia Applications.\" 2019 IEEE International Symposium on Smart Electronic Systems (iSES) (Formerly iNiS). IEEE, 2019.",
+            "link":""
+        },
+        {
+            "paper":"Garg, Bharat, and Yashoda Bisht. \"A Novel High Performance Reverse Carry Propagate Adder for Energy Efficient Multimedia Applications.\" 2019 IEEE International Symposium on Smart Electronic Systems (iSES) (Formerly iNiS). IEEE, 2019.",
+            "link":""
+        },
+        {
+            "paper":"Patel, Sujit, Bharat Garg, Anurag Mahajan, and Shireesh Rai. \"Area-delay efficient and low-power carry skip adder for high performance computing systems.\" In 2019 IEEE International Symposium on Smart Electronic Systems (iSES) (Formerly iNiS), pp. 300-303. IEEE, 2019.",
+            "link":""
+        },
+        {
+            "paper":"Vijaypal Rathor, Bharat Garg and G. K. Sharma, \"An Energy−Efficient Trusted FSM Design Technique to Thwart Fault Injection and Trojan Attacks\", In VLSI Design (VLSID), 31st Int. Conf. on, pp. 73-78. IEEE, 2018.",
+            "link":""
+        },
+        {
+            "paper":"Naushad Ali and Bharat Garg, \"New Energy Efficient Reconfigurable FIR Filter Architecture and Its VLSI Implementation\", International Symposium on VLSI and Test (VDAT-2017), pp. 1-6, 2017.",
+            "link":""
+        },
+        {
+            "paper":"Bharat Garg, and G. K. Sharma, \"Block Matching Algorithm for Deriving Quality-Tuneable Motion Estimation Architecture\", In Industrial and Information Systems (ICIIS-2016), 11th Int. Conference on, pp. 1-6, 2016.",
+            "link":""
+        },
+        {
+            "paper":"Bharat Garg, and G. K. Sharma, \"Low Power Signal Processing via Approximate Multiplier for Error-Resilient Applications\", In Industrial and Information Systems (ICIIS-2016), 11th Int. Conference on, pp. 1-6, 2016.",
+            "link":""
+        },
+        {
+            "paper":"Bharat Garg, Sameer Yadav, and G. K. Sharma, \"An Area and Performance Aware ECG Encoder Design for Wireless Healthcare Services\", International Symposium on VLSI Design and Test (VDAT-2016), pp. 1-6, 2016.",
+            "link":""
+        },
+        {
+            "paper":"Bharat Garg, Chaitanya Goteti, and G. K. Sharma, \"A Low-Cost Energy Efficient Image Scaling Processor for Multimedia Applications\", International Symposium on VLSI Design and Test (VDAT-2016), pp. 1-6, 2016.",
+            "link":""
+        },
+        {
+            "paper":"Vikas Kaushal, Bharat Garg, Ankur Jaiswal, and G. K. Sharma \"Energy Aware Computation Driven Approximate DCT Architecture for Image Processing\" In VLSI Design (VLSID), 2015 28th Int. Conf. on, pp. 357-362. IEEE, 2015",
+            "link":""
+        },
+        {
+            "paper":"Ankur Jaiswal, Bharat Garg, Vikas Kaushal, and G. K. Sharma, \"SPAA-Aware 2D Gaussian Smoothing Filter Design Using Efficient Approximation Techniques\", In VLSI Design (VLSID), 2015 28th International Conference on pp. 333-338, IEEE, 2015.",
+            "link":""
+        },
+        {
+            "paper":"Bharat Garg, Nitesh K. Bharadwaj, and G. K. Sharma \"Energy scalable approximate DCT architecture trading quality via boundary error-resiliency\", System-on-Chip Conference (SOCC), 27th IEEE Int., 2014, Las Vegas, USA.",
+            "link":""
+        }
+    ]
+}

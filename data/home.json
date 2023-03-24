@@ -1,0 +1,35 @@
+{
+    "carousal":[
+        {
+            "img":"caro1.jpeg",
+            "heading":"smth",
+            "subheading":"sub-smth"
+        },
+        {
+            "img":"caro2.jpeg",
+            "heading":"smth",
+            "subheading":"sub-smth"
+        },
+        {
+            "img":"caro1.jpeg",
+            "heading":"smth",
+            "subheading":"sub-smth"
+        }
+    ],
+    "opportunities":[
+        {
+            "title": "Approx. Computing",
+            "content":{
+                "text":"smth",
+                "link":"https://smth.com"
+            }
+        },
+        {
+            "title": "Image processing",
+            "content":{
+                "text":"smth",
+                "link":"https://smth.com"
+            }
+        }
+    ]
+}
